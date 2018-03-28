@@ -175,9 +175,8 @@ Resources:
       Runtime: python3.6
       Timeout: 30
       Code:
-        S3Bucket: quickstart-reference
-        S3Key:
-          Fn::Sub: connect/integration/aria/latest/functions/packages/integration-test/integration-test.zip
+        S3Bucket: aws-quickstart
+        S3Key: connect-integration-aria/functions/packages/integration-test/integration-test.zip
   IntegrationTest:
     Type: Custom::IntegrationTest
     Version: '1.0'
@@ -267,9 +266,8 @@ Resources:
           SF_VERSION:
             Ref: SalesforceVersion
       Code:
-        S3Bucket: quickstart-reference
-        S3Key:
-          Fn::Sub: connect/integration/aria/latest/functions/packages/integration/integration.zip
+        S3Bucket: aws-quickstart
+        S3Key: connect-integration-aria/functions/packages/integration/integration.zip
   SalesforceCreateFunctionPermission:
     Type: AWS::Lambda::Permission
     Properties:
@@ -306,9 +304,8 @@ Resources:
           SF_VERSION:
             Ref: SalesforceVersion
       Code:
-        S3Bucket: quickstart-reference
-        S3Key:
-          Fn::Sub: connect/integration/aria/latest/functions/packages/integration/integration.zip
+        S3Bucket: aws-quickstart
+        S3Key: connect-integration-aria/functions/packages/integration/integration.zip
   SalesforceUpdateFunctionPermission:
     Type: AWS::Lambda::Permission
     Properties:
@@ -345,9 +342,8 @@ Resources:
           SF_VERSION:
             Ref: SalesforceVersion
       Code:
-        S3Bucket: quickstart-reference
-        S3Key:
-          Fn::Sub: connect/integration/aria/latest/functions/packages/integration/integration.zip
+        S3Bucket: aws-quickstart
+        S3Key: connect-integration-aria/functions/packages/integration/integration.zip
   SalesforceLookupFunctionPermission:
     Type: AWS::Lambda::Permission
     Properties:
@@ -385,9 +381,8 @@ Resources:
           SF_VERSION:
             Ref: SalesforceVersion
       Code:
-        S3Bucket: quickstart-reference
-        S3Key:
-          Fn::Sub: connect/integration/aria/latest/functions/packages/integration/integration.zip
+        S3Bucket: aws-quickstart
+        S3Key: connect-integration-aria/functions/packages/integration/integration.zip
   SalesforceIntervalQueueFunction:
     Type: AWS::Lambda::Function
     Properties:
@@ -416,9 +411,8 @@ Resources:
           SF_ACCESS_TOKEN:
             Ref: SalesforceAccessToken
       Code:
-        S3Bucket: quickstart-reference
-        S3Key:
-          Fn::Sub: connect/integration/aria/latest/functions/packages/integration/integration.zip
+        S3Bucket: aws-quickstart
+        S3Key: connect-integration-aria/functions/packages/integration/integration.zip
   TranscribeRecordingFunction:
     Type: AWS::Lambda::Function
     Properties:
@@ -448,9 +442,8 @@ Resources:
           GOOGLE_KEY:
             Ref: TranscriptionAPIKey
       Code:
-        S3Bucket: quickstart-reference
-        S3Key:
-          Fn::Sub: connect/integration/aria/latest/functions/packages/integration/integration.zip
+        S3Bucket: aws-quickstart
+        S3Key: connect-integration-aria/functions/packages/integration/integration.zip
 Outputs:
   LambdaBasicExec:
     Description: Lambda Function Execution Role ARN
