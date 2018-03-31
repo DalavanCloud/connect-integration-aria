@@ -5,6 +5,6 @@ The Salesforce Toolkit for Amazon Connect by Aria Solutions is a collection of p
 
 ![Architecture for Aria Solutions integration](https://d0.awsstatic.com/partner-network/QuickStart/connect/connect-integration-aria-architecture.png)
 
-For details and launch information, see the [data sheet](https://aws.amazon.com/quickstart/connect/aria/).
+For details and launch information, see the [data sheet](https://fwd.aws/jer9E).
 
 To post feedback, submit feature ideas, or report bugs, use the **Issues** section of this GitHub repo.
